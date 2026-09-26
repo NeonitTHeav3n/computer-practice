@@ -1,0 +1,107 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><title>Лабораторная работа № 2</title><style>body{font-family:Arial,sans-serif;background:#172033;color:#f4f7fb;margin:0}.slide{box-sizing:border-box;min-height:100vh;padding:6vh 9vw;display:flex;flex-direction:column;justify-content:center;border-bottom:2px solid #53627a}.slide h1{font-size:38px;color:#8ed1fc;margin:0 0 25px}.slide li{font-size:22px;line-height:1.55}.slide img{max-width:80%;max-height:46vh;object-fit:contain;margin:18px auto}.meta{text-align:center}.meta h1{font-size:46px}.small{font-size:20px;color:#bac7d9}</style></head><body>
+<section class="slide meta">
+<h1>Докладчик</h1><ul>
+<li>Жаворонков Кирилл Александрович</li>
+<li>Студент</li>
+<li>Группа: НПИбд-01-23</li>
+<li>Номер студенческого билета: 1132231844</li>
+</ul>
+</section>
+<section class="slide">
+<h1>Цель работы</h1><ul>
+<li>Изучить структуры данных Julia: множества, кортежи, словари, векторы и матрицы.</li>
+<li>Освоить создание и преобразование массивов.</li>
+<li>Научиться применять фильтрацию, сортировку, статистические функции и пакет Primes.</li>
+</ul>
+</section>
+<section class="slide">
+<h1>Слайд 1. Множества</h1><ul>
+<li>Созданы множества A, B и C.</li>
+<li>Выполнено объединение попарных пересечений.</li>
+<li>Получено P = {0, 1, 3, 4, 7, 9}; |P| = 6.</li>
+</ul>
+<img src="image/KdQk0Tb38WLF9s6NiVoWW_urPWqgTuXxiRAktvjtk868itQAPZWoVjK_yCkFX3uvVP0W9eHHPld4yrhBFb-ryFQw.jpg" alt="Иллюстрация">
+</section>
+<section class="slide">
+<h1>Слайд 2. Диапазоны и фильтрация</h1><ul>
+<li>Создан массив чисел от 1 до 25.</li>
+<li>С помощью filter выбраны элементы, большие 20: [21, 22, 23, 24, 25].</li>
+<li>Рассмотрены прямой и обратный диапазоны.</li>
+</ul>
+<img src="image/CvuXHhd6iPLoy4UdwNIjSZqpzVjoLYP5KxbVyHthZnasBPJF5nLqnxodygMl3EktWxCVQoti8SzFLZKg0P6fA-Oo.jpg" alt="Иллюстрация">
+</section>
+<section class="slide">
+<h1>Слайд 3. Повторение элементов</h1><ul>
+<li>Использованы fill, repeat и vcat.</li>
+<li>repeat(tmp, 10) повторяет весь вектор.</li>
+<li>fill(value, n) повторяет один элемент заданное число раз.</li>
+</ul>
+<img src="image/-vBgiBFCTJIOA5xhn_dOK9vk-4dfEQIhPZT9TQD3vBkPcJkNOCMAZlVI9yvjlvyOrJeJnYXqpSNFoqN4u_fvq2kR.jpg" alt="Иллюстрация">
+</section>
+<section class="slide">
+<h1>Слайд 4. Генераторы и zip</h1><ul>
+<li>Созданы векторы степенных выражений и строк fn1 … fn30.</li>
+<li>С помощью zip сформирован вектор из 12 кортежей.</li>
+<li>Генераторы позволяют компактно задавать вычисления.</li>
+</ul>
+<img src="image/dU27PIh3CaqbJKcWObNzhDzLe3r7bLB4Mj4YOBQlNaGPPe0LfFXbwrCkWH5AvgY0AO_lGyID4yrBE9wEue8zE67a.jpg" alt="Иллюстрация">
+</section>
+<section class="slide">
+<h1>Слайд 5. Операции над массивами</h1><ul>
+<li>Сформированы случайные массивы x и y длиной 250 элементов.</li>
+<li>Вычислены разности соседних элементов и линейные комбинации.</li>
+<li>Также применены тригонометрические функции поэлементно.</li>
+</ul>
+<img src="image/wEi4nBt0bovPHooB-M3po_ABAj1jxbmPGvnLLIPwENOzMZksIEIc1nz6YTXv4dbed8syWeJ1Ca7IW06__r5PyPvE.jpg" alt="Иллюстрация">
+</section>
+<section class="slide">
+<h1>Слайд 6. Фильтрация и подсчёт</h1><ul>
+<li>Использованы findall, count, maximum и unique.</li>
+<li>Для одного запуска: элементов y &gt; 600 — 83; чётных — 137; нечётных — 113.</li>
+<li>Количество элементов x, кратных 7, — 34.</li>
+</ul>
+<img src="image/vVgE3Eja_OpmzN6dDPWQOK3uIpdIk-BOFUKaJMffSSWwseKA7JMdMl4H0-_Pg7R9qcSUUL5U8nfodXXfes99Oyet.jpg" alt="Иллюстрация">
+</section>
+<section class="slide">
+<h1>Слайд 7. Сортировка</h1><ul>
+<li>sortperm позволяет упорядочить x по значениям y.</li>
+<li>sort(x, rev=true) возвращает элементы x в порядке убывания.</li>
+<li>unique удаляет повторяющиеся значения.</li>
+</ul>
+<img src="image/KK-5MT6KgGI1lX9yiFNwQ3wVx6oU-_CuURk0gtGygPmEhZgw1hRAVdY0GYTYwlRvSdBrA1kZTSbGmwlD33eN2yeS.jpg" alt="Иллюстрация">
+</section>
+<section class="slide">
+<h1>Слайд 8. Квадраты и простые числа</h1><ul>
+<li>Построены квадраты чисел от 1 до 100.</li>
+<li>Последние значения: 9604, 9801, 10000.</li>
+<li>В диапазоне до 1000 найдено 168 простых чисел.</li>
+</ul>
+<img src="image/Cv-I6yHGXoBAyuF9IVNnhFkoIxp3FgmDkc9e-yOJwHqR3VT-e3-kxLNYWxbYCwTQRLQp9biEV4tTCivM7SVnQwoL.jpg" alt="Иллюстрация">
+</section>
+<section class="slide">
+<h1>Слайд 9. Пакет Primes</h1><ul>
+<li>89-е простое число равно 461.</li>
+<li>Срез простых чисел с 89-го по 99-е: [461, 463, 467, 479, 487, 491, 499, 503, 509, 521, 523].</li>
+<li>Для вычислений подключён пакет Primes.</li>
+</ul>
+<img src="image/1DdwtdQqKwIO8WiHXtKqIYeggzW5WG7FAsoI31BsDEr9h7xCcfwvfE9n7xgksDZ8o23XF96xTZnI7LbiZLs21KV2.jpg" alt="Иллюстрация">
+</section>
+<section class="slide">
+<h1>Слайд 10. Вычисление сумм</h1><ul>
+<li>Вычислены три суммы из задания.</li>
+<li>sum_6_1 = 251835580835.</li>
+<li>sum_6_2 ≈ 5.1948766717837875e10.</li>
+<li>sum_6_3 ≈ 6.976346137897618.</li>
+</ul>
+<img src="image/TCxjUw6hVQ8gqjJGRSp0AdnIbE4kUoNt7Ie7UvkgfT9t3l75njAifk5Y2V0mDnzkdGsFnoWioqhCu2AmEkuePCxT.jpg" alt="Иллюстрация">
+</section>
+<section class="slide">
+<h1>Выводы</h1><ul>
+<li>Изучены основные структуры данных Julia и операции над ними.</li>
+<li>Освоены генераторы, фильтрация, сортировка и статистическая обработка массивов.</li>
+<li>Получены практические навыки работы с пакетом Primes.</li>
+<li>При работе с большими произведениями учтена возможность переполнения Int64.</li>
+</ul>
+</section>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a413d1c0cee71f3c',t:'MTc5MDQ0MTk2OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","spa":2}' crossorigin="anonymous"></script>
+</body></html>
