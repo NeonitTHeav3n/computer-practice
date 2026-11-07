@@ -1,0 +1,11 @@
+# Сборка отчёта ЛР №5 (нужен Quarto)
+all: report.pdf report.docx
+
+report.pdf: report.qmd
+	quarto render report.qmd --to pdf
+
+report.docx: report.qmd
+	quarto render report.qmd --to docx
+
+clean:
+	rm -f report.pdf report.docx
